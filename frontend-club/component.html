@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./webComponent.js"></script>
+    <title>Web Components 101</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <simple-component>Welcome to the Frontend Club!!</simple-component>
+    <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <todo-item>ToDO 1</todo-item>
+    <custom-todo-item>
+      ToDO 2
+      <span slot="description">(random text)</span>
+    </custom-todo-item>
+    <todo-item>ToDO 3</todo-item>
+  </body>
+</html>
